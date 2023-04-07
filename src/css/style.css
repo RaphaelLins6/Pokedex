@@ -1,0 +1,91 @@
+@import url('https://fonts.google.com/specimen/Bebas+Neue');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'BebasNeue', cursive;
+}
+
+body {
+    text-align: center;
+    background: url('/src/imagem/background.gif');
+    background-size: 100%;
+    position: relative;
+}
+main {
+    display: inline-block;
+}
+
+.pokedex {
+    width: 100vw;
+    height: 100vh;
+}
+
+.pokemon_img {
+    position: absolute;
+    bottom: 35%;
+    left: 58%;
+    transform: translate(-160%, 20%);
+    height: 50%;
+}
+
+.pokemon_dados {
+    position: absolute;
+    font-weight: 600;
+    color: black;
+    top: 8%;
+    left: 81%;
+    font-size: clamp(8px, 5vw, 25px);
+}
+
+.pokemon_nome {
+    color: black;
+    text-transform: capitalize;
+}
+
+.form {
+    position: absolute;
+    width: 20%;
+    top: 56%;
+    left: 76.8%;
+}
+
+.input_search {
+    width: 100%;
+    padding: 2%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 30%;
+    left: 85%;
+    width: 15%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    width: 50%;
+    padding: 2%;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #333;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
